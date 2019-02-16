@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TTT_LAYOUT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TTT_Game_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="130dp"
+        android:paddingBottom="20dp"
+        android:text="@string/TTT_GAME_TEXT"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        android:columnCount="3">
+
+        <ImageButton
+            android:id="@+id/button0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/ttt_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/ttt_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/ttt_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/ttt_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/ttt_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/ttt_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/ttt_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/ttt_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/ttt_space"
+            android:onClick="playerMove" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/RESTART_BUTTON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRestart"
+            android:text="Restart" />
+
+        <Button
+            android:id="@+id/QUIT_BUTTON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onQuit"
+            android:text="Quit" />
+    </LinearLayout>
+</LinearLayout>

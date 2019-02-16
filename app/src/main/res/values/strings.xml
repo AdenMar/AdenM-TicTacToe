@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="MAIN_MENU_TEXT">Welcome to Tic Tac Toe!</string>
+    <string name="MAIN_BUTTON">Click Here To Play!</string>
+    <string name="ttt_space">TTT_SPACE</string>
+    <string name="TTT_GAME_TEXT">It\'s Tic Tac Toe Time!</string>
+    <string name="INSTRUCTION_TEXT">Click on a space to play and the computer will automatically go!</string>
+</resources>
